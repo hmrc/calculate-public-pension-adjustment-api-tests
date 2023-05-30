@@ -14,18 +14,17 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.test.api.helpers
+package uk.gov.hmrc.test.api.utils
 
-import org.scalatest.Assertions.fail
-import play.api.libs.ws.StandaloneWSRequest
-import uk.gov.hmrc.test.api.service.AuthService
+import scala.util.Random
 
-class AuthHelper {
-
-  val authAPI: AuthService = new AuthService
-
-  def getAuthBearerToken: String = {
-    val authServiceRequestResponse: StandaloneWSRequest#Self#Response = authAPI.postLogin
-    authServiceRequestResponse.header("Authorization").getOrElse(fail("Could not obtain auth bearer token"))
+object NINOGenerator {
+  val nino = {
+    val firstTwoLetters = "ABCEGHJKLMNPRSTWXYZ"
+    val letterPart      = Random.shuffle(firstTwoLetters.toList).take(2).mkString
+    val numberPart      = Random.nextInt(999999).toString.reverse.padTo(6, '0').reverse
+    val lastLetters     = "ABCD"
+    val lastLetterPart  = Random.shuffle(lastLetters.toList).take(1).mkString
+    s"$letterPart$numberPart$lastLetterPart"
   }
 }

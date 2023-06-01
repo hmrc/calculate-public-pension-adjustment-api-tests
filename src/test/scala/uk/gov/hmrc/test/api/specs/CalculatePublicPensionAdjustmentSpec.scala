@@ -17,7 +17,6 @@
 package uk.gov.hmrc.test.api.specs
 
 import play.api.libs.ws.StandaloneWSResponse
-import uk.gov.hmrc.test.api.models.{Income, TaxYear, TaxYearScheme}
 import uk.gov.hmrc.test.api.utils.ApiLogger
 
 class CalculatePublicPensionAdjustmentSpec extends BaseSpec {

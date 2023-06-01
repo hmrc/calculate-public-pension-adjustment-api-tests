@@ -1,17 +1,12 @@
 {
   "scottishTaxYears": [
     "2017",
-    "2019",
-    "2021"
+    "2018"
   ],
   "taxYears": [
     {
       "period": "2013",
       "pensionInputAmount": 10000
-    },
-    {
-      "period": "2014",
-      "pensionInputAmount": 11000
     },
     {
       "period": "2015",
@@ -28,16 +23,16 @@
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
-          "pstr": "pstrTest1",
-          "oPensionInputAmount": 12000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 12000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 1000
         },
         {
           "name": "Scheme 2",
-          "pstr": "pstrTest2",
-          "oPensionInputAmount": 12000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest2",
+          "originalPensionInputAmount": 12000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 1000
         }
       ]
@@ -51,16 +46,16 @@
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
-          "pstr": "pstrTest1",
-          "oPensionInputAmount": 12000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 12000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 2000
         },
         {
           "name": "Scheme 2",
-          "pstr": "pstrTest2",
-          "oPensionInputAmount": 12000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest2",
+          "originalPensionInputAmount": 12000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 6000
         }
       ]
@@ -78,43 +73,17 @@
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
-          "pstr": "pstrTest1",
-          "oPensionInputAmount": 12000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 12000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 9000
         },
         {
           "name": "Scheme 2",
-          "pstr": "pstrTest2",
-          "oPensionInputAmount": 12000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest2",
+          "originalPensionInputAmount": 12000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 9000
-        }
-      ]
-    },
-    {
-      "period": "2018",
-      "totalIncome": 100000,
-      "pensionInputAmount": 10000,
-      "income": {
-        "incomeAboveThreshold": true,
-        "adjustedIncome": 24000
-      },
-      "chargePaidByMember": 0,
-      "taxYearSchemes": [
-        {
-          "name": "Scheme 1",
-          "pstr": "pstrTest1",
-          "oPensionInputAmount": 12000,
-          "rPensionInputAmount": 10000,
-          "chargePaidByScheme": 0
-        },
-        {
-          "name": "Scheme 2",
-          "pstr": "pstrTest2",
-          "oPensionInputAmount": 18000,
-          "rPensionInputAmount": 10000,
-          "chargePaidByScheme": 6000
         }
       ]
     },
@@ -131,16 +100,16 @@
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
-          "pstr": "pstrTest1",
-          "oPensionInputAmount": 12000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 12000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 3000
         },
         {
           "name": "Scheme 2",
-          "pstr": "pstrTest2",
-          "oPensionInputAmount": 18000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest2",
+          "originalPensionInputAmount": 18000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 0
         }
       ]
@@ -159,43 +128,17 @@
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
-          "pstr": "pstrTest1",
-          "oPensionInputAmount": 12000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 12000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 6000
         },
         {
           "name": "Scheme 2",
-          "pstr": "pstrTest2",
-          "oPensionInputAmount": 18000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest2",
+          "originalPensionInputAmount": 18000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 0
-        }
-      ]
-    },
-    {
-      "period": "2021",
-      "totalIncome": 90000,
-      "pensionInputAmount": 10000,
-      "income": {
-        "incomeAboveThreshold": true,
-        "adjustedIncome": 24000
-      },
-      "chargePaidByMember": 8000,
-      "taxYearSchemes": [
-        {
-          "name": "Scheme 1",
-          "pstr": "pstrTest1",
-          "oPensionInputAmount": 12000,
-          "rPensionInputAmount": 10000,
-          "chargePaidByScheme": 2000
-        },
-        {
-          "name": "Scheme 2",
-          "pstr": "pstrTest2",
-          "oPensionInputAmount": 18000,
-          "rPensionInputAmount": 10000,
-          "chargePaidByScheme": 1000
         }
       ]
     },
@@ -212,16 +155,16 @@
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
-          "pstr": "pstrTest1",
-          "oPensionInputAmount": 12000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 12000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 3000
         },
         {
           "name": "Scheme 2",
-          "pstr": "pstrTest2",
-          "oPensionInputAmount": 18000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest2",
+          "originalPensionInputAmount": 18000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 6000
         }
       ]
@@ -241,16 +184,16 @@
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
-          "pstr": "pstrTest1",
-          "oPensionInputAmount": 12000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 12000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 1000
         },
         {
           "name": "Scheme 2",
-          "pstr": "pstrTest2",
-          "oPensionInputAmount": 18000,
-          "rPensionInputAmount": 10000,
+          "pensionSchemeTaxReference": "pstrTest2",
+          "originalPensionInputAmount": 18000,
+          "revisedPensionInputAmount": 10000,
           "chargePaidByScheme": 6000
         }
       ]

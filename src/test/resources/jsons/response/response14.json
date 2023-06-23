@@ -1,0 +1,53 @@
+{
+  "outDates": [
+    {
+      "period": "2016-pre",
+      "directCompensation": 0,
+      "indirectCompensation": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "compensation": 0
+        }
+      ]
+    },
+    {
+      "period": "2016-post",
+      "directCompensation": 0,
+      "indirectCompensation": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "compensation": 0
+        }
+      ]
+    },
+    {
+      "period": "2017",
+      "directCompensation": 0,
+      "indirectCompensation": 2475,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "compensation": 2475
+        }
+      ]
+    },
+    {
+      "period": "2018",
+      "directCompensation": 3375,
+      "indirectCompensation": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "compensation": 0
+        }
+      ]
+    }
+  ],
+  "inDates": []
+}

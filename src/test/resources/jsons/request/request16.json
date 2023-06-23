@@ -1,0 +1,149 @@
+{
+  "scottishTaxYears": [],
+  "taxYears": [
+    {
+      "period": "2013",
+      "pensionInputAmount": 40000
+    },
+    {
+      "period": "2014",
+      "pensionInputAmount": 40000
+    },
+    {
+      "period": "2015",
+      "pensionInputAmount": 40000
+    },
+    {
+      "period": "2016-pre",
+      "totalIncome": 0,
+      "definedBenefitInputAmount": 35000,
+      "definedContributionInputAmount": 0,
+      "chargePaidByMember": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 35000,
+          "revisedPensionInputAmount": 35000,
+          "chargePaidByScheme": 0
+        }
+      ]
+    },
+    {
+      "period": "2016-post",
+      "totalIncome": 60000,
+      "definedBenefitInputAmount": 36000,
+      "definedContributionInputAmount": 0,
+      "chargePaidByMember": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 36000,
+          "revisedPensionInputAmount": 36000,
+          "chargePaidByScheme": 0
+        }
+      ]
+    },
+    {
+      "period": "2017",
+      "totalIncome": 60000,
+      "definedBenefitInputAmount": 23000,
+      "flexiAccessDate": "2016-09-06",
+      "preAccessDefinedContributionInputAmount": 6000,
+      "postAccessDefinedContributionInputAmount": 21000,
+      "income": {
+        "incomeAboveThreshold": false,
+        "adjustedIncome": 0
+      },
+      "chargePaidByMember": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 44000,
+          "revisedPensionInputAmount": 23000,
+          "chargePaidByScheme": 10800
+        }
+      ]
+    },
+    {
+      "period": "2018",
+      "totalIncome": 60000,
+      "definedBenefitInputAmount": 40000,
+      "definedContributionInputAmount": 2000,
+      "income": {
+        "incomeAboveThreshold": false,
+        "adjustedIncome": 0
+      },
+      "chargePaidByMember": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 43000,
+          "revisedPensionInputAmount": 40000,
+          "chargePaidByScheme": 2000
+        }
+      ]
+    },
+    {
+      "period": "2019",
+      "totalIncome": 60000,
+      "definedBenefitInputAmount": 35000,
+      "definedContributionInputAmount": 5000,
+      "income": {
+        "incomeAboveThreshold": false,
+        "adjustedIncome": 0
+      },
+      "chargePaidByMember": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 45000,
+          "revisedPensionInputAmount": 35000,
+          "chargePaidByScheme": 4000
+        }
+      ]
+    },
+    {
+      "period": "2020",
+      "totalIncome": 60000,
+      "definedBenefitInputAmount": 30000,
+      "definedContributionInputAmount": 6000,
+      "income": {
+        "incomeAboveThreshold": false
+      },
+      "chargePaidByMember": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 30000,
+          "revisedPensionInputAmount": 30000,
+          "chargePaidByScheme": 800
+        }
+      ]
+    },
+    {
+      "period": "2021",
+      "totalIncome": 60000,
+      "definedBenefitInputAmount": 45000,
+      "definedContributionInputAmount": 3000,
+      "income": {
+        "incomeAboveThreshold": false
+      },
+      "chargePaidByMember": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "originalPensionInputAmount": 45000,
+          "revisedPensionInputAmount": 45000,
+          "chargePaidByScheme": 800
+        }
+      ]
+    }
+  ]
+}

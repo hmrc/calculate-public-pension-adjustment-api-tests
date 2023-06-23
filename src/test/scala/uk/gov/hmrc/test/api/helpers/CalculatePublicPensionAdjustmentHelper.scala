@@ -18,21 +18,18 @@ package uk.gov.hmrc.test.api.helpers
 
 import play.api.libs.ws.StandaloneWSRequest
 import uk.gov.hmrc.test.api.service.CalculatePublicPensionAdjustmentService
-
-import scala.io.Source
+import uk.gov.hmrc.test.api.utils.JsonUtils.getRequestJsonFileAsString
 
 class CalculatePublicPensionAdjustmentHelper {
 
   val calculatePublicPensionAdjustmentService: CalculatePublicPensionAdjustmentService =
     new CalculatePublicPensionAdjustmentService
-  def getJsonAsString(fileName: String): String                                        =
-    Source.fromResource("jsons/" + fileName + ".json").getLines().mkString
   def calculatePostRequest(
     uri: String,
     jsonFileName: String,
     token: String
   ) = {
-    val json                                                           = getJsonAsString(jsonFileName)
+    val json                                                           = getRequestJsonFileAsString(jsonFileName)
     val individualsMatchGetResponse: StandaloneWSRequest#Self#Response =
       calculatePublicPensionAdjustmentService.calculatePostRequest(uri, json, token)
     individualsMatchGetResponse

@@ -1,0 +1,94 @@
+{
+  "outDates": [
+    {
+      "period": "2016-pre",
+      "directCompensation": 0,
+      "indirectCompensation": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "compensation": 0
+        }
+      ]
+    },
+    {
+      "period": "2016-post",
+      "directCompensation": 0,
+      "indirectCompensation": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "compensation": 0
+        }
+      ]
+    },
+    {
+      "period": "2017",
+      "directCompensation": 0,
+      "indirectCompensation": 6400,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "compensation": 6400
+        }
+      ]
+    },
+    {
+      "period": "2018",
+      "directCompensation": 0,
+      "indirectCompensation": 2000,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "compensation": 2000
+        }
+      ]
+    },
+    {
+      "period": "2019",
+      "directCompensation": 0,
+      "indirectCompensation": 3600,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "compensation": 3600
+        }
+      ]
+    }
+  ],
+  "inDates": [
+    {
+      "period": "2020",
+      "originalCharge": 800,
+      "memberCredit": 0,
+      "schemeCredit": 0,
+      "Debit": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "chargePaidByScheme": 800
+        }
+      ]
+    },
+    {
+      "period": "2021",
+      "originalCharge": 800,
+      "memberCredit": 0,
+      "schemeCredit": 400,
+      "Debit": 0,
+      "taxYearSchemes": [
+        {
+          "name": "Scheme 1",
+          "pensionSchemeTaxReference": "pstrTest1",
+          "chargePaidByScheme": 800
+        }
+      ]
+    }
+  ]
+}

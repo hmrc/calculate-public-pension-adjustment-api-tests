@@ -48,9 +48,6 @@ class CalculatePublicPensionAdjustmentSpec extends BaseSpec {
         When("I get the test data response file as a string")
         val jsonResponseFile = convertJsonFormatASString(getResponseJsonFileAsString(responseFileName))
 
-        println("£££££ : " + jsonResponseBody)
-        println("££@@£££ : " + jsonResponseFile)
-
         Then("I verify the response exactly matching with the test data response file")
         assert(jsonResponseBody == jsonResponseFile, "Response is not as expected")
 

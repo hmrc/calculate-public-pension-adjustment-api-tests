@@ -1,4 +1,9 @@
 {
+  "totalAmounts": {
+    "outDatesCompensation": 4400,
+    "inDatesDebit": 0,
+    "inDatesCredit": 0
+  },
   "outDates": [
     {
       "period": "2016-pre",

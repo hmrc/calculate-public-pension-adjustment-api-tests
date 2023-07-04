@@ -1,4 +1,9 @@
 {
+  "totalAmounts": {
+    "outDatesCompensation": 8400,
+    "inDatesDebit": 0,
+    "inDatesCredit": 0
+  },
   "outDates": [
     {
       "period": "2016-pre",
@@ -67,7 +72,7 @@
       "originalCharge": 0,
       "memberCredit": 0,
       "schemeCredit": 0,
-      "Debit": 0,
+      "debit": 0,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -81,7 +86,7 @@
       "originalCharge": 0,
       "memberCredit": 0,
       "schemeCredit": 0,
-      "Debit": 0,
+      "debit": 0,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -95,7 +100,7 @@
       "originalCharge": 0,
       "memberCredit": 0,
       "schemeCredit": 0,
-      "Debit": 0,
+      "debit": 0,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -109,7 +114,7 @@
       "originalCharge": 0,
       "memberCredit": 0,
       "schemeCredit": 0,
-      "Debit": 0,
+      "debit": 0,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",

@@ -1,4 +1,8 @@
 {
+  "resubmission": {
+    "isResubmission": true,
+    "reason": "Not received reply from HMRC"
+  },
   "scottishTaxYears": [],
   "taxYears": [
     {

@@ -1,4 +1,8 @@
 {
+  "resubmission" : {
+    "isResubmission" : true,
+    "reason": "Change in amounts"
+  },
   "scottishTaxYears": [],
   "taxYears": [
     {

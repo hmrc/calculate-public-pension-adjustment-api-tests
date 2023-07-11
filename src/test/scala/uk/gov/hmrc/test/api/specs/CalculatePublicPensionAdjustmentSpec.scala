@@ -23,10 +23,12 @@ class CalculatePublicPensionAdjustmentSpec extends BaseSpec {
   val uri = "submit-public-pension-adjustment/calculation/submit"
 
   Feature("Calculate Public Pension Adjustment API functionality") {
-    val requestArray: Array[String]  =
+    val requestArray: Array[String] =
       Array("request10", "request11", "request12", "request14", "request16", "request17")
+
     val responseArray: Array[String] =
       Array("response10", "response11", "response12", "response14", "response16", "response17")
+
     requestArray.indices.foreach { index =>
       Scenario(s"Verify Calculate Public Pension Adjustment API works fine - Test data set $index") {
         Given("I got a valid url and test file name")

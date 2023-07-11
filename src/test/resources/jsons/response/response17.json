@@ -1,9 +1,22 @@
 {
+  "resubmission": {
+    "isResubmission": false
+  },
+  "totalAmounts": {
+    "outDatesCompensation": 4400,
+    "inDatesDebit": 0,
+    "inDatesCredit": 0
+  },
   "outDates": [
     {
       "period": "2016-pre",
       "directCompensation": 0,
       "indirectCompensation": 0,
+      "chargePaidByMember": 0,
+      "chargePaidBySchemes": 0,
+      "revisedChargableAmountBeforeTaxRate": 0,
+      "revisedChargableAmountAfterTaxRate": 0,
+      "unusedAnnualAllowance": 60000,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -21,6 +34,11 @@
       "period": "2016-post",
       "directCompensation": 0,
       "indirectCompensation": 3200,
+      "chargePaidByMember": 0,
+      "chargePaidBySchemes": 3200,
+      "revisedChargableAmountBeforeTaxRate": 0,
+      "revisedChargableAmountAfterTaxRate": 0,
+      "unusedAnnualAllowance": 10000,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -38,6 +56,11 @@
       "period": "2017",
       "directCompensation": 200,
       "indirectCompensation": 1000,
+      "chargePaidByMember": 200,
+      "chargePaidBySchemes": 1000,
+      "revisedChargableAmountBeforeTaxRate": 0,
+      "revisedChargableAmountAfterTaxRate": 0,
+      "unusedAnnualAllowance": 2000,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -55,6 +78,11 @@
       "period": "2018",
       "directCompensation": 0,
       "indirectCompensation": 0,
+      "chargePaidByMember": 0,
+      "chargePaidBySchemes": 0,
+      "revisedChargableAmountBeforeTaxRate": 0,
+      "revisedChargableAmountAfterTaxRate": 0,
+      "unusedAnnualAllowance": 4000,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",

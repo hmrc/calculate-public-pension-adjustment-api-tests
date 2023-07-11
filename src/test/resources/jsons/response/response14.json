@@ -1,9 +1,23 @@
 {
+  "resubmission": {
+    "isResubmission": true,
+    "reason": "Not received reply from HMRC"
+  },
+  "totalAmounts": {
+    "outDatesCompensation": 5850,
+    "inDatesDebit": 0,
+    "inDatesCredit": 0
+  },
   "outDates": [
     {
       "period": "2016-pre",
       "directCompensation": 0,
       "indirectCompensation": 0,
+      "chargePaidByMember": 0,
+      "chargePaidBySchemes": 0,
+      "revisedChargableAmountBeforeTaxRate": 0,
+      "revisedChargableAmountAfterTaxRate": 0,
+      "unusedAnnualAllowance": 60000,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -16,6 +30,11 @@
       "period": "2016-post",
       "directCompensation": 0,
       "indirectCompensation": 0,
+      "chargePaidByMember": 0,
+      "chargePaidBySchemes": 0,
+      "revisedChargableAmountBeforeTaxRate": 0,
+      "revisedChargableAmountAfterTaxRate": 0,
+      "unusedAnnualAllowance": 23000,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -28,6 +47,11 @@
       "period": "2017",
       "directCompensation": 0,
       "indirectCompensation": 2475,
+      "chargePaidByMember": 0,
+      "chargePaidBySchemes": 2475,
+      "revisedChargableAmountBeforeTaxRate": 0,
+      "revisedChargableAmountAfterTaxRate": 0,
+      "unusedAnnualAllowance": 13000,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -40,6 +64,11 @@
       "period": "2018",
       "directCompensation": 3375,
       "indirectCompensation": 0,
+      "chargePaidByMember": 3375,
+      "chargePaidBySchemes": 0,
+      "revisedChargableAmountBeforeTaxRate": 0,
+      "revisedChargableAmountAfterTaxRate": 0,
+      "unusedAnnualAllowance": 9000,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",

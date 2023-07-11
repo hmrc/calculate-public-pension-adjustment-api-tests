@@ -20,12 +20,12 @@
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
-          "pensionSchemeTaxReference": "pstrTest1",
+          "pensionSchemeTaxReference": "00348916RT",
           "compensation": 0
         },
         {
           "name": "Scheme 2",
-          "pensionSchemeTaxReference": "pstrTest2",
+          "pensionSchemeTaxReference": "00348916RG",
           "compensation": 0
         }
       ]
@@ -42,12 +42,12 @@
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
-          "pensionSchemeTaxReference": "pstrTest1",
+          "pensionSchemeTaxReference": "00348916RT",
           "compensation": 0
         },
         {
           "name": "Scheme 2",
-          "pensionSchemeTaxReference": "pstrTest2",
+          "pensionSchemeTaxReference": "00348916RG",
           "compensation": 0
         }
       ]
@@ -64,12 +64,12 @@
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
-          "pensionSchemeTaxReference": "pstrTest1",
+          "pensionSchemeTaxReference": "00348916RT",
           "compensation": 0
         },
         {
           "name": "Scheme 2",
-          "pensionSchemeTaxReference": "pstrTest2",
+          "pensionSchemeTaxReference": "00348916RG",
           "compensation": 0
         }
       ]
@@ -86,12 +86,12 @@
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
-          "pensionSchemeTaxReference": "pstrTest1",
+          "pensionSchemeTaxReference": "00348916RT",
           "compensation": 0
         },
         {
           "name": "Scheme 2",
-          "pensionSchemeTaxReference": "pstrTest2",
+          "pensionSchemeTaxReference": "00348916RG",
           "compensation": 0
         }
       ]

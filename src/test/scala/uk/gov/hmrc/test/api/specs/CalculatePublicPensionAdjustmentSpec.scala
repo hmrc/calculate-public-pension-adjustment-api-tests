@@ -24,21 +24,33 @@ class CalculatePublicPensionAdjustmentSpec extends BaseSpec {
 
   Feature("Calculate Public Pension Adjustment API functionality") {
     val requestArray: Array[String] =
-      Array("request10", "request11", "request12", "request14", "request16", "request17")
-
-    val responseArray: Array[String] =
-      Array("response10", "response11", "response12", "response14", "response16", "response17")
+      Array(
+        "Scenario_1a",
+        "Scenario_1b",
+        "Scenario_1c",
+        "Scenario_1d",
+        "Scenario_2a",
+        "Scenario_2b",
+        "Scenario_2c",
+        "Scenario_2d",
+        "Scenario_10",
+        "Scenario_11",
+        "Scenario_12",
+        "Scenario_14",
+        "Scenario_16",
+        "Scenario_17",
+        "Scenario_18"
+      )
 
     requestArray.indices.foreach { index =>
       Scenario(s"Verify Calculate Public Pension Adjustment API works fine - Test data set $index") {
         Given("I got a valid url and test file name")
-        val uri              = "show-calculation"
-        val requestFileName  = requestArray(index)
-        val responseFileName = responseArray(index)
+        val uri      = "show-calculation"
+        val filename = requestArray(index)
 
         When("I use the calculate public pension adjustment API request to get a valid response")
         val response: StandaloneWSResponse =
-          calculatePublicPensionAdjustmentHelper.calculatePostRequest(uri, requestFileName, "123")
+          calculatePublicPensionAdjustmentHelper.calculatePostRequest(uri, filename, "123")
 
         Then("I got the status code 200")
         response.status shouldBe 200
@@ -48,7 +60,7 @@ class CalculatePublicPensionAdjustmentSpec extends BaseSpec {
         val jsonResponseBody = convertJsonFormatASString(jsonBody)
 
         When("I get the test data response file as a string")
-        val jsonResponseFile = convertJsonFormatASString(getResponseJsonFileAsString(responseFileName))
+        val jsonResponseFile = convertJsonFormatASString(getResponseJsonFileAsString(filename))
 
         Then("I verify the response exactly matching with the test data response file")
         assert(jsonResponseBody == jsonResponseFile, "Response is not as expected")

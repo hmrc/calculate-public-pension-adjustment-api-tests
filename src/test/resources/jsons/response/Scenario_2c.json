@@ -1,12 +1,11 @@
 {
   "resubmission": {
-    "isResubmission": true,
-    "reason": "Change in amounts"
+    "isResubmission": false
   },
   "totalAmounts": {
-    "outDatesCompensation": 4000,
-    "inDatesDebit": 0,
-    "inDatesCredit": 3200
+    "outDatesCompensation": 10470,
+    "inDatesDebit": 3400,
+    "inDatesCredit": 6050
   },
   "outDates": [
     {
@@ -17,7 +16,7 @@
       "chargePaidBySchemes": 0,
       "revisedChargableAmountBeforeTaxRate": 0,
       "revisedChargableAmountAfterTaxRate": 0,
-      "unusedAnnualAllowance": 54000,
+      "unusedAnnualAllowance": 40000,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -28,18 +27,18 @@
     },
     {
       "period": "2016-post",
-      "directCompensation": 2000,
-      "indirectCompensation": 0,
-      "chargePaidByMember": 2000,
-      "chargePaidBySchemes": 0,
+      "directCompensation": 3600,
+      "indirectCompensation": 3600,
+      "chargePaidByMember": 3600,
+      "chargePaidBySchemes": 3600,
       "revisedChargableAmountBeforeTaxRate": 0,
       "revisedChargableAmountAfterTaxRate": 0,
-      "unusedAnnualAllowance": 10000,
+      "unusedAnnualAllowance": 0,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
           "pensionSchemeTaxReference": "00348916RT",
-          "compensation": 0
+          "compensation": 3600
         }
       ]
     },
@@ -49,9 +48,9 @@
       "indirectCompensation": 0,
       "chargePaidByMember": 0,
       "chargePaidBySchemes": 0,
-      "revisedChargableAmountBeforeTaxRate": 0,
-      "revisedChargableAmountAfterTaxRate": 0,
-      "unusedAnnualAllowance": 5000,
+      "revisedChargableAmountBeforeTaxRate": 5000,
+      "revisedChargableAmountAfterTaxRate": 2000,
+      "unusedAnnualAllowance": 0,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -62,30 +61,30 @@
     },
     {
       "period": "2018",
-      "directCompensation": 1000,
-      "indirectCompensation": 1000,
-      "chargePaidByMember": 1000,
-      "chargePaidBySchemes": 1000,
+      "directCompensation": 200,
+      "indirectCompensation": 200,
+      "chargePaidByMember": 200,
+      "chargePaidBySchemes": 200,
       "revisedChargableAmountBeforeTaxRate": 0,
       "revisedChargableAmountAfterTaxRate": 0,
-      "unusedAnnualAllowance": 5000,
+      "unusedAnnualAllowance": 2000,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
           "pensionSchemeTaxReference": "00348916RT",
-          "compensation": 1000
+          "compensation": 200
         }
       ]
     },
     {
       "period": "2019",
-      "directCompensation": 0,
+      "directCompensation": 2870,
       "indirectCompensation": 0,
-      "chargePaidByMember": 0,
+      "chargePaidByMember": 3280,
       "chargePaidBySchemes": 0,
-      "revisedChargableAmountBeforeTaxRate": 0,
-      "revisedChargableAmountAfterTaxRate": 0,
-      "unusedAnnualAllowance": 10000,
+      "revisedChargableAmountBeforeTaxRate": 1000,
+      "revisedChargableAmountAfterTaxRate": 410,
+      "unusedAnnualAllowance": 0,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -100,12 +99,12 @@
       "period": "2020",
       "memberCredit": 0,
       "schemeCredit": 0,
-      "debit": 0,
-      "chargePaidByMember": 0,
+      "debit": 3400,
+      "chargePaidByMember": 5600,
       "chargePaidBySchemes": 0,
-      "revisedChargableAmountBeforeTaxRate": 0,
-      "revisedChargableAmountAfterTaxRate": 0,
-      "unusedAnnualAllowance": 11000,
+      "revisedChargableAmountBeforeTaxRate": 20000,
+      "revisedChargableAmountAfterTaxRate": 9000,
+      "unusedAnnualAllowance": 0,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -116,14 +115,14 @@
     },
     {
       "period": "2021",
-      "memberCredit": 0,
+      "memberCredit": 2250,
       "schemeCredit": 0,
       "debit": 0,
-      "chargePaidByMember": 0,
+      "chargePaidByMember": 8100,
       "chargePaidBySchemes": 0,
-      "revisedChargableAmountBeforeTaxRate": 0,
-      "revisedChargableAmountAfterTaxRate": 0,
-      "unusedAnnualAllowance": 15000,
+      "revisedChargableAmountBeforeTaxRate": 13000,
+      "revisedChargableAmountAfterTaxRate": 5850,
+      "unusedAnnualAllowance": 0,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
@@ -134,37 +133,37 @@
     },
     {
       "period": "2022",
-      "memberCredit": 0,
-      "schemeCredit": 0,
+      "memberCredit": 500,
+      "schemeCredit": 1500,
       "debit": 0,
-      "chargePaidByMember": 0,
-      "chargePaidBySchemes": 0,
+      "chargePaidByMember": 500,
+      "chargePaidBySchemes": 1500,
       "revisedChargableAmountBeforeTaxRate": 0,
       "revisedChargableAmountAfterTaxRate": 0,
-      "unusedAnnualAllowance": 10000,
+      "unusedAnnualAllowance": 2000,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
           "pensionSchemeTaxReference": "00348916RT",
-          "chargePaidByScheme": 0
+          "chargePaidByScheme": 1500
         }
       ]
     },
     {
       "period": "2023",
-      "memberCredit": 0,
-      "schemeCredit": 3200,
+      "memberCredit": 600,
+      "schemeCredit": 1200,
       "debit": 0,
-      "chargePaidByMember": 0,
-      "chargePaidBySchemes": 4400,
-      "revisedChargableAmountBeforeTaxRate": 3000,
-      "revisedChargableAmountAfterTaxRate": 1200,
+      "chargePaidByMember": 3000,
+      "chargePaidBySchemes": 6000,
+      "revisedChargableAmountBeforeTaxRate": 16000,
+      "revisedChargableAmountAfterTaxRate": 7200,
       "unusedAnnualAllowance": 0,
       "taxYearSchemes": [
         {
           "name": "Scheme 1",
           "pensionSchemeTaxReference": "00348916RT",
-          "chargePaidByScheme": 4400
+          "chargePaidByScheme": 6000
         }
       ]
     }

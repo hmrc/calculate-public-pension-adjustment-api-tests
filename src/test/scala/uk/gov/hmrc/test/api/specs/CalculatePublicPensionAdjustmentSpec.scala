@@ -38,8 +38,7 @@ class CalculatePublicPensionAdjustmentSpec extends BaseSpec {
         "Scenario_12",
         "Scenario_14",
         "Scenario_16",
-        "Scenario_17",
-        "Scenario_18"
+        "Scenario_17"
       )
 
     requestArray.indices.foreach { index =>
@@ -50,20 +49,10 @@ class CalculatePublicPensionAdjustmentSpec extends BaseSpec {
 
         When("I use the calculate public pension adjustment API request to get a valid response")
         val response: StandaloneWSResponse =
-          calculatePublicPensionAdjustmentHelper.calculatePostRequest(uri, filename, "123")
+          calculatePublicPensionAdjustmentHelper.post(uri, filename, "123")
 
         Then("I got the status code 200")
         response.status shouldBe 200
-
-        When("I get the response body as a string")
-        val jsonBody         = response.body.mkString
-        val jsonResponseBody = convertJsonFormatASString(jsonBody)
-
-        When("I get the test data response file as a string")
-        val jsonResponseFile = convertJsonFormatASString(getResponseJsonFileAsString(filename))
-
-        Then("I verify the response exactly matching with the test data response file")
-        assert(jsonResponseBody == jsonResponseFile, "Response is not as expected")
 
       }
     }

@@ -16,7 +16,7 @@
 
 package uk.gov.hmrc.test.api.service
 
-import play.api.libs.ws.StandaloneWSRequest
+import play.api.libs.ws.{StandaloneWSRequest, StandaloneWSResponse}
 import uk.gov.hmrc.test.api.client.HttpClient
 import uk.gov.hmrc.test.api.conf.TestConfiguration
 
@@ -25,7 +25,9 @@ import scala.concurrent.duration._
 
 class CalculatePublicPensionAdjustmentService extends HttpClient {
   val host: String                                = TestConfiguration.url("cppa")
+  val ppaHost: String                                = TestConfiguration.url("ppa")
   val calculatePublicPensionAdjustmentURL: String = s"$host/calculate-public-pension-adjustment/"
+  val publicPensionAdjustmentURL: String = s"$ppaHost/public-pension-adjustment"
 
   def calculatePostRequest(
     uri: String,
@@ -43,4 +45,33 @@ class CalculatePublicPensionAdjustmentService extends HttpClient {
       ),
       10.seconds
     )
+
+  def calculatePostRequestWithFormData(
+                            uri: String,
+                            individual: Map[String, String],
+                            token: String
+                          ): StandaloneWSRequest#Self#Response =
+    Await.result(
+      postWithFormData(
+        publicPensionAdjustmentURL + uri,
+        individual,
+        ("Content-Type", "application/json"),
+        ("Authorization", token),
+        ("CorrelationId", "12345678"),
+        ("Accept", "application/vnd.hmrc.P1.0+json")
+      ),
+      10.seconds
+    )
+
+  def calculateGetRequest(authToken: String, url: String): StandaloneWSRequest#Self#Response =
+    Await.result(
+      get(
+        publicPensionAdjustmentURL + url,
+        ("Authorization", "123"),
+        ("CorrelationId", "12345678"),
+        ("Accept", "application/vnd.hmrc.P1.0+json")
+      ),
+      10.seconds
+    )
+
 }

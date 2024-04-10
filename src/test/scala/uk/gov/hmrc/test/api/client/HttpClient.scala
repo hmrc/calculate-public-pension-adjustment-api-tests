@@ -18,7 +18,7 @@ package uk.gov.hmrc.test.api.client
 
 import akka.actor.ActorSystem
 import play.api.libs.ws.DefaultBodyWritables._
-import play.api.libs.ws.StandaloneWSRequest
+import play.api.libs.ws._
 import play.api.libs.ws.ahc.StandaloneAhcWSClient
 
 import scala.concurrent.{ExecutionContext, Future}
@@ -40,6 +40,16 @@ trait HttpClient {
       .url(url)
       .withHttpHeaders(headers: _*)
       .post(bodyAsJson)
+
+  def postWithFormData(
+    url: String,
+    paramData: Map[String, String],
+    headers: (String, String)*
+  ): Future[StandaloneWSRequest#Self#Response]                                                   =
+    wsClient
+      .url(url)
+      .withHttpHeaders(headers: _*)
+      .post(paramData.map { case (k, v) => s"$k=$v" }.mkString("&"))
 
   def delete(url: String, headers: (String, String)*): Future[StandaloneWSRequest#Self#Response] =
     wsClient

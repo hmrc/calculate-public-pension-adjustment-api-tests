@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 package uk.gov.hmrc.test.api.service
 
-import play.api.libs.ws.{StandaloneWSRequest, StandaloneWSResponse}
+import play.api.libs.ws.StandaloneWSRequest
 import uk.gov.hmrc.test.api.client.HttpClient
 import uk.gov.hmrc.test.api.conf.TestConfiguration
 
@@ -25,9 +25,9 @@ import scala.concurrent.duration._
 
 class CalculatePublicPensionAdjustmentService extends HttpClient {
   val host: String                                = TestConfiguration.url("cppa")
-  val ppaHost: String                                = TestConfiguration.url("ppa")
+  val ppaHost: String                             = TestConfiguration.url("ppa")
   val calculatePublicPensionAdjustmentURL: String = s"$host/calculate-public-pension-adjustment/"
-  val publicPensionAdjustmentURL: String = s"$ppaHost/public-pension-adjustment"
+  val publicPensionAdjustmentURL: String          = s"$ppaHost/public-pension-adjustment"
 
   def calculatePostRequest(
     uri: String,
@@ -47,10 +47,10 @@ class CalculatePublicPensionAdjustmentService extends HttpClient {
     )
 
   def calculatePostRequestWithFormData(
-                            uri: String,
-                            individual: Map[String, String],
-                            token: String
-                          ): StandaloneWSRequest#Self#Response =
+    uri: String,
+    individual: Map[String, String],
+    token: String
+  ): StandaloneWSRequest#Self#Response =
     Await.result(
       postWithFormData(
         publicPensionAdjustmentURL + uri,

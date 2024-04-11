@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,9 @@ import scala.concurrent.duration._
 
 class CalculatePublicPensionAdjustmentService extends HttpClient {
   val host: String                                = TestConfiguration.url("cppa")
+  val ppaHost: String                             = TestConfiguration.url("ppa")
   val calculatePublicPensionAdjustmentURL: String = s"$host/calculate-public-pension-adjustment/"
+  val publicPensionAdjustmentURL: String          = s"$ppaHost/public-pension-adjustment"
 
   def calculatePostRequest(
     uri: String,
@@ -43,4 +45,33 @@ class CalculatePublicPensionAdjustmentService extends HttpClient {
       ),
       10.seconds
     )
+
+  def calculatePostRequestWithFormData(
+    uri: String,
+    individual: Map[String, String],
+    token: String
+  ): StandaloneWSRequest#Self#Response =
+    Await.result(
+      postWithFormData(
+        publicPensionAdjustmentURL + uri,
+        individual,
+        ("Content-Type", "application/json"),
+        ("Authorization", token),
+        ("CorrelationId", "12345678"),
+        ("Accept", "application/vnd.hmrc.P1.0+json")
+      ),
+      10.seconds
+    )
+
+  def calculateGetRequest(authToken: String, url: String): StandaloneWSRequest#Self#Response =
+    Await.result(
+      get(
+        publicPensionAdjustmentURL + url,
+        ("Authorization", "123"),
+        ("CorrelationId", "12345678"),
+        ("Accept", "application/vnd.hmrc.P1.0+json")
+      ),
+      10.seconds
+    )
+
 }

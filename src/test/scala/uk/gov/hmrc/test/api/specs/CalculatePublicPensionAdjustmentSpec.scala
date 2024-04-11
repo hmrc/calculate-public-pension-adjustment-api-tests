@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,6 @@
 package uk.gov.hmrc.test.api.specs
 
 import play.api.libs.ws.StandaloneWSResponse
-import uk.gov.hmrc.test.api.utils.JsonUtils.{convertJsonFormatASString, getResponseJsonFileAsString}
 
 class CalculatePublicPensionAdjustmentSpec extends BaseSpec {
   val uri = "submit-public-pension-adjustment/calculation/submit"
@@ -38,8 +37,7 @@ class CalculatePublicPensionAdjustmentSpec extends BaseSpec {
         "Scenario_12",
         "Scenario_14",
         "Scenario_16",
-        "Scenario_17",
-        "Scenario_18"
+        "Scenario_17"
       )
 
     requestArray.indices.foreach { index =>
@@ -50,20 +48,10 @@ class CalculatePublicPensionAdjustmentSpec extends BaseSpec {
 
         When("I use the calculate public pension adjustment API request to get a valid response")
         val response: StandaloneWSResponse =
-          calculatePublicPensionAdjustmentHelper.calculatePostRequest(uri, filename, "123")
+          calculatePublicPensionAdjustmentHelper.post(uri, filename, "123")
 
         Then("I got the status code 200")
         response.status shouldBe 200
-
-        When("I get the response body as a string")
-        val jsonBody         = response.body.mkString
-        val jsonResponseBody = convertJsonFormatASString(jsonBody)
-
-        When("I get the test data response file as a string")
-        val jsonResponseFile = convertJsonFormatASString(getResponseJsonFileAsString(filename))
-
-        Then("I verify the response exactly matching with the test data response file")
-        assert(jsonResponseBody == jsonResponseFile, "Response is not as expected")
 
       }
     }

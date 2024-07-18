@@ -1,32 +1,64 @@
 {
-    "resubmission": {
-        "isResubmission": false
+    "resubmission" : {
+        "isResubmission" : false
     },
-    "annualAllowance": {
-        "scottishTaxYears": [],
-        "taxYears": [
-            {
-                "pensionInputAmount": 5,
-                "taxYearSchemes": [
-                    {
-                        "name": "Scheme1",
-                        "pensionSchemeTaxReference": "00348916RU",
-                        "originalPensionInputAmount": 1,
-                        "revisedPensionInputAmount": 2,
-                        "chargePaidByScheme": 0
-                    },
-                    {
-                        "name": "Scheme2",
-                        "pensionSchemeTaxReference": "00348916RG",
-                        "originalPensionInputAmount": 2,
-                        "revisedPensionInputAmount": 3,
-                        "chargePaidByScheme": 4
-                    }
-                ],
-                "totalIncome": 5,
-                "chargePaidByMember": 3,
-                "period": "2016"
+    "annualAllowance" : {
+        "scottishTaxYears" : [ ],
+        "taxYears" : [ {
+            "pensionInputAmount" : 40000,
+            "taxYearSchemes" : [ {
+                "name" : "NHS",
+                "pensionSchemeTaxReference" : "11123456BC",
+                "revisedPensionInputAmount" : 40000,
+                "chargePaidByScheme" : 0,
+                "revisedPensionInput2016PostAmount" : 2000
+            } ],
+            "totalIncome" : 60000,
+            "chargePaidByMember" : 0,
+            "period" : "2016",
+            "incomeSubJourney" : {
+                "giftAidAmount" : 3000,
+                "personalAllowanceAmount" : 2000,
+                "blindPersonsAllowanceAmount" : 2290
+            },
+            "pensionInput2016PostAmount" : 2000
+        }, {
+            "pensionInputAmount" : 32000,
+            "taxYearSchemes" : [ {
+                "name" : "NHS",
+                "pensionSchemeTaxReference" : "11123456BC",
+                "revisedPensionInputAmount" : 8000,
+                "chargePaidByScheme" : 0
+            }, {
+                "name" : "MyCSP",
+                "pensionSchemeTaxReference" : "00123456CC",
+                "revisedPensionInputAmount" : 8000,
+                "chargePaidByScheme" : 0
+            }, {
+                "name" : "Army",
+                "pensionSchemeTaxReference" : "00123456DD",
+                "revisedPensionInputAmount" : 8000,
+                "chargePaidByScheme" : 0
+            }, {
+                "name" : "Fire",
+                "pensionSchemeTaxReference" : "00123456EE",
+                "revisedPensionInputAmount" : 8000,
+                "chargePaidByScheme" : 0
+            } ],
+            "totalIncome" : 300000,
+            "chargePaidByMember" : 0,
+            "period" : "2017",
+            "incomeSubJourney" : {
+                "lumpsumDeathBenefitsAmount" : 6000,
+                "personalContributionsAmount" : 5000,
+                "giftAidAmount" : 3000,
+                "personalAllowanceAmount" : 2130,
+                "blindPersonsAllowanceAmount" : 2290
+            },
+            "income" : {
+                "incomeAboveThreshold" : true,
+                "adjustedIncome" : 326000
             }
-        ]
+        } ]
     }
 }

@@ -2,6 +2,11 @@
   "resubmission" : {
     "isResubmission" : false
   },
+  "setup" : {
+    "annualAllowanceSetup" : {
+      "savingsStatement" : true
+    }
+  },
   "annualAllowance" : {
     "scottishTaxYears" : [ ],
     "taxYears" : [ {
@@ -17,6 +22,7 @@
       "chargePaidByMember" : 0,
       "period" : "2016",
       "incomeSubJourney" : {
+        "taxReliefAmount" : 200000,
         "giftAidAmount" : 3000,
         "personalAllowanceAmount" : 2000,
         "blindPersonsAllowanceAmount" : 2290
@@ -49,16 +55,15 @@
       "chargePaidByMember" : 0,
       "period" : "2017",
       "incomeSubJourney" : {
-        "rASContributionsAmount" : 550,
-        "lumpsumDeathBenefitsAmount" : 6000,
+        "rASContributionsAmount" : 2000,
+        "taxReliefAmount" : 200000,
         "personalContributionsAmount" : 5000,
-        "reliefClaimedOnOverseasPensionsAmount" : 1300,
         "personalAllowanceAmount" : 2130,
         "blindPersonsAllowanceAmount" : 2290
       },
       "income" : {
         "incomeAboveThreshold" : true,
-        "adjustedIncome" : 326750
+        "adjustedIncome" : 130000
       }
     } ]
   }

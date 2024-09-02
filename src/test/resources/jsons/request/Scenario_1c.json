@@ -3,6 +3,16 @@
     "isResubmission" : true,
     "reason" : "resubmission reason"
   },
+  "setup" : {
+    "annualAllowanceSetup" : {
+      "savingsStatement" : true
+    },
+    "lifetimeAllowanceSetup" : {
+      "benefitCrystallisationEventFlag" : true,
+      "changeInLifetimeAllowancePercentageInformedFlag" : true,
+      "multipleBenefitCrystallisationEventFlag" : false
+    }
+  },
   "annualAllowance" : {
     "scottishTaxYears" : [ "2017" ],
     "taxYears" : [ {
@@ -32,12 +42,11 @@
         "chargePaidByScheme" : 0,
         "revisedPensionInput2016PostAmount" : 2000
       } ],
-      "totalIncome" : 110000,
+      "totalIncome" : 10000,
       "chargePaidByMember" : 0,
       "period" : "2016",
       "incomeSubJourney" : {
-        "payeCodeAdjustment" : "increase",
-        "codeAdjustmentAmount" : 3000,
+        "giftAidAmount" : 3000,
         "blindPersonsAllowanceAmount" : 2290
       },
       "definedBenefitInput2016PostAmount" : 6000,
@@ -46,7 +55,7 @@
     }, {
       "definedBenefitInputAmount" : 6000,
       "definedContributionInputAmount" : 0,
-      "totalIncome" : 6000000,
+      "totalIncome" : 10000,
       "chargePaidByMember" : 500,
       "taxYearSchemes" : [ {
         "name" : "NHS",
@@ -76,27 +85,23 @@
       } ],
       "period" : "2017",
       "incomeSubJourney" : {
-        "adjustedIncomeAmount" : 1000,
-        "personalAllowanceAmount" : 2130,
+        "rASContributionsAmount" : 2000,
+        "giftAidAmount" : 3000,
         "blindPersonsAllowanceAmount" : 2290
       },
       "income" : {
-        "incomeAboveThreshold" : true,
-        "adjustedIncome" : 1000
+        "incomeAboveThreshold" : false
       }
     } ]
   },
   "lifeTimeAllowance" : {
-    "benefitCrystallisationEventFlag" : true,
     "benefitCrystallisationEventDate" : "2017-06-25",
-    "changeInLifetimeAllowancePercentageInformedFlag" : true,
     "changeInTaxCharge" : "increasedCharge",
     "lifetimeAllowanceProtectionOrEnhancements" : "no",
     "protectionTypeEnhancementChanged" : "no",
     "previousLifetimeAllowanceChargeFlag" : false,
     "newLifetimeAllowanceChargeWillBePaidBy" : "you",
     "newLifeTimeAllowanceAdditions" : {
-      "multipleBenefitCrystallisationEventFlag" : false,
       "userSchemeDetails" : {
         "name" : "army",
         "taxRef" : "11123456ED"

@@ -1,107 +1,70 @@
 {
   "resubmission" : {
-    "isResubmission" : true,
-    "reason" : "resubmission reason"
+    "isResubmission" : false
+  },
+  "setup" : {
+    "annualAllowanceSetup" : {
+      "savingsStatement" : true
+    }
   },
   "annualAllowance" : {
-    "scottishTaxYears" : [ "2017" ],
+    "scottishTaxYears" : [ ],
     "taxYears" : [ {
-      "pensionInputAmount" : 110000000,
-      "period" : "2011"
-    }, {
-      "pensionInputAmount" : 120000000,
-      "period" : "2012"
-    }, {
-      "pensionInputAmount" : 130000000,
-      "period" : "2013"
-    }, {
-      "pensionInputAmount" : 200000000,
-      "period" : "2014"
-    }, {
-      "pensionInputAmount" : 300000000,
-      "period" : "2015"
-    }, {
-      "definedBenefitInputAmount" : 6000,
-      "flexiAccessDate" : "2016-01-01",
-      "preAccessDefinedContributionInputAmount" : 5000,
-      "postAccessDefinedContributionInputAmount" : 0,
+      "pensionInputAmount" : 40000,
       "taxYearSchemes" : [ {
         "name" : "NHS",
-        "pensionSchemeTaxReference" : "00123456AA",
+        "pensionSchemeTaxReference" : "11123456BC",
         "revisedPensionInputAmount" : 40000,
         "chargePaidByScheme" : 0,
         "revisedPensionInput2016PostAmount" : 2000
       } ],
-      "totalIncome" : 160000,
+      "totalIncome" : 60000,
       "chargePaidByMember" : 0,
       "period" : "2016",
       "incomeSubJourney" : {
-        "personalAllowanceAmount" : 2030,
+        "giftAidAmount" : 3000,
+        "personalAllowanceAmount" : 2000,
         "blindPersonsAllowanceAmount" : 2290
       },
-      "definedBenefitInput2016PostAmount" : 6000,
-      "definedContributionInput2016PostAmount" : 5000,
-      "postAccessDefinedContributionInput2016PostAmount" : 5000
+      "pensionInput2016PostAmount" : 2000
     }, {
-      "definedBenefitInputAmount" : 6000,
-      "definedContributionInputAmount" : 0,
-      "totalIncome" : 1000,
-      "chargePaidByMember" : 500,
+      "pensionInputAmount" : 32000,
       "taxYearSchemes" : [ {
         "name" : "NHS",
-        "pensionSchemeTaxReference" : "00123456AA",
-        "revisedPensionInputAmount" : 17000,
-        "chargePaidByScheme" : 500
-      }, {
-        "name" : "MyCSP",
-        "pensionSchemeTaxReference" : "00123456BB",
-        "revisedPensionInputAmount" : 6000,
+        "pensionSchemeTaxReference" : "11123456BC",
+        "revisedPensionInputAmount" : 8000,
         "chargePaidByScheme" : 0
       }, {
-        "name" : "Police",
+        "name" : "MyCSP",
         "pensionSchemeTaxReference" : "00123456CC",
-        "revisedPensionInputAmount" : 6000,
+        "revisedPensionInputAmount" : 8000,
         "chargePaidByScheme" : 0
       }, {
         "name" : "Army",
         "pensionSchemeTaxReference" : "00123456DD",
-        "revisedPensionInputAmount" : 6000,
+        "revisedPensionInputAmount" : 8000,
         "chargePaidByScheme" : 0
       }, {
-        "name" : "fire",
+        "name" : "Fire",
         "pensionSchemeTaxReference" : "00123456EE",
-        "revisedPensionInputAmount" : 6000,
+        "revisedPensionInputAmount" : 8000,
         "chargePaidByScheme" : 0
       } ],
+      "totalIncome" : 1000,
+      "chargePaidByMember" : 0,
       "period" : "2017",
       "incomeSubJourney" : {
-        "taxReliefAmount" : 200000,
+        "salarySacrificeAmount" : 1000,
+        "rASContributionsAmount" : 2000,
+        "lumpsumDeathBenefitsAmount" : 5000,
+        "isAboveThreshold" : false,
         "giftAidAmount" : 3000,
-        "personalAllowanceAmount" : 2030,
+        "personalAllowanceAmount" : 2130,
         "blindPersonsAllowanceAmount" : 2290
       },
       "income" : {
         "incomeAboveThreshold" : false
       }
     } ]
-  },
-  "lifeTimeAllowance" : {
-    "benefitCrystallisationEventFlag" : true,
-    "benefitCrystallisationEventDate" : "2017-06-25",
-    "changeInLifetimeAllowancePercentageInformedFlag" : true,
-    "changeInTaxCharge" : "increasedCharge",
-    "lifetimeAllowanceProtectionOrEnhancements" : "no",
-    "protectionTypeEnhancementChanged" : "no",
-    "previousLifetimeAllowanceChargeFlag" : false,
-    "newLifetimeAllowanceChargeWillBePaidBy" : "you",
-    "newLifeTimeAllowanceAdditions" : {
-      "multipleBenefitCrystallisationEventFlag" : false,
-      "userSchemeDetails" : {
-        "name" : "army",
-        "taxRef" : "11123456ED"
-      },
-      "newExcessLifetimeAllowancePaid" : "annualPayment",
-      "newAnnualPaymentValue" : 1000
-    }
   }
 }

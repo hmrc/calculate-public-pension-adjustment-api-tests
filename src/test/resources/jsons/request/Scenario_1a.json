@@ -1,69 +1,119 @@
 {
   "resubmission" : {
-    "isResubmission" : false
+    "isResubmission" : true,
+    "reason" : "resubmission reason"
+  },
+  "setup" : {
+    "annualAllowanceSetup" : {
+      "savingsStatement" : true
+    },
+    "lifetimeAllowanceSetup" : {
+      "benefitCrystallisationEventFlag" : true,
+      "changeInLifetimeAllowancePercentageInformedFlag" : true,
+      "multipleBenefitCrystallisationEventFlag" : false
+    }
   },
   "annualAllowance" : {
-    "scottishTaxYears" : [ ],
+    "scottishTaxYears" : [ "2017" ],
     "taxYears" : [ {
-      "pensionInputAmount" : 40000,
+      "pensionInputAmount" : 110000000,
+      "period" : "2011"
+    }, {
+      "pensionInputAmount" : 120000000,
+      "period" : "2012"
+    }, {
+      "pensionInputAmount" : 130000000,
+      "period" : "2013"
+    }, {
+      "pensionInputAmount" : 200000000,
+      "period" : "2014"
+    }, {
+      "pensionInputAmount" : 300000000,
+      "period" : "2015"
+    }, {
+      "definedBenefitInputAmount" : 6000,
+      "flexiAccessDate" : "2016-01-01",
+      "preAccessDefinedContributionInputAmount" : 5000,
+      "postAccessDefinedContributionInputAmount" : 0,
       "taxYearSchemes" : [ {
         "name" : "NHS",
-        "pensionSchemeTaxReference" : "11123456BC",
+        "pensionSchemeTaxReference" : "00123456AA",
         "revisedPensionInputAmount" : 40000,
         "chargePaidByScheme" : 0,
         "revisedPensionInput2016PostAmount" : 2000
       } ],
-      "totalIncome" : 42385,
+      "totalIncome" : 42386,
       "chargePaidByMember" : 0,
       "period" : "2016",
       "incomeSubJourney" : {
+        "rASContributionsAmount" : 2000,
+        "taxReliefAmount" : 100,
         "giftAidAmount" : 3000,
-        "personalAllowanceAmount" : 2000,
-        "blindPersonsAllowanceAmount" : 2290
+        "personalAllowanceAmount" : 2000
       },
-      "pensionInput2016PostAmount" : 2000
+      "definedBenefitInput2016PostAmount" : 6000,
+      "definedContributionInput2016PostAmount" : 5000,
+      "postAccessDefinedContributionInput2016PostAmount" : 5000
     }, {
-      "pensionInputAmount" : 32000,
+      "definedBenefitInputAmount" : 6000,
+      "definedContributionInputAmount" : 0,
+      "totalIncome" : 1200000,
+      "chargePaidByMember" : 500,
       "taxYearSchemes" : [ {
         "name" : "NHS",
-        "pensionSchemeTaxReference" : "11123456BC",
-        "revisedPensionInputAmount" : 8000,
-        "chargePaidByScheme" : 0
+        "pensionSchemeTaxReference" : "00123456AA",
+        "revisedPensionInputAmount" : 17000,
+        "chargePaidByScheme" : 500
       }, {
         "name" : "MyCSP",
+        "pensionSchemeTaxReference" : "00123456BB",
+        "revisedPensionInputAmount" : 6000,
+        "chargePaidByScheme" : 0
+      }, {
+        "name" : "Police",
         "pensionSchemeTaxReference" : "00123456CC",
-        "revisedPensionInputAmount" : 8000,
+        "revisedPensionInputAmount" : 6000,
         "chargePaidByScheme" : 0
       }, {
         "name" : "Army",
         "pensionSchemeTaxReference" : "00123456DD",
-        "revisedPensionInputAmount" : 8000,
+        "revisedPensionInputAmount" : 6000,
         "chargePaidByScheme" : 0
       }, {
-        "name" : "Fire",
+        "name" : "fire",
         "pensionSchemeTaxReference" : "00123456EE",
-        "revisedPensionInputAmount" : 8000,
+        "revisedPensionInputAmount" : 6000,
         "chargePaidByScheme" : 0
       } ],
-      "totalIncome" : 360000,
-      "chargePaidByMember" : 0,
       "period" : "2017",
       "incomeSubJourney" : {
-        "salarySacrificeAmount" : 1000,
-        "lumpsumDeathBenefitsAmount" : 5000,
-        "isAboveThreshold" : true,
-        "taxReliefAmount" : 2000,
-        "taxReliefPensionAmount" : 1000,
-        "personalContributionsAmount" : 3000,
-        "reliefClaimedOnOverseasPensionsAmount" : 1300,
+        "rASContributionsAmount" : 2000,
+        "taxReliefAmount" : 100,
+        "adjustedIncomeAmount" : 1000,
         "giftAidAmount" : 3000,
-        "personalAllowanceAmount" : 2130,
-        "blindPersonsAllowanceAmount" : 2291
+        "tradeUnionOrPoliceReliefAmount" : 100,
+        "blindPersonsAllowanceAmount" : 2290
       },
       "income" : {
         "incomeAboveThreshold" : true,
-        "adjustedIncome" : 387300
+        "adjustedIncome" : 1000
       }
     } ]
+  },
+  "lifeTimeAllowance" : {
+    "benefitCrystallisationEventDate" : "2017-06-25",
+    "changeInTaxCharge" : "increasedCharge",
+    "lifetimeAllowanceProtectionOrEnhancements" : "no",
+    "protectionTypeEnhancementChanged" : "no",
+    "previousLifetimeAllowanceChargeFlag" : false,
+    "newLifetimeAllowanceChargeWillBePaidBy" : "you",
+    "newLifeTimeAllowanceAdditions" : {
+      "userSchemeDetails" : {
+        "name" : "army",
+        "taxRef" : "11123456ED"
+      },
+      "newExcessLifetimeAllowancePaid" : "annualPayment",
+      "newAnnualPaymentValue" : 1000
+    }
   }
-} 
+}

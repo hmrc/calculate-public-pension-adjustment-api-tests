@@ -19,7 +19,6 @@ package uk.gov.hmrc.test.api.specs
 import play.api.libs.ws.StandaloneWSResponse
 
 class CalculatePublicPensionAdjustmentSpec extends BaseSpec {
-  val uri = "submit-public-pension-adjustment/calculation/submit"
 
   Feature("Calculate Public Pension Adjustment API functionality") {
     val requestArray: Array[String] =

@@ -4,13 +4,25 @@
     "reason" : "resubmission reason"
   },
   "setup" : {
-    "annualAllowanceSetup" : {
-      "savingsStatement" : true
+    "annualAllowanceSetup": {
+      "savingsStatement": true,
+      "pensionProtectedMember": false,
+      "hadAACharge": false,
+      "contributionRefunds": false,
+      "maybePIAIncrease": "idk",
+      "maybePIAUnchangedOrDecreased": "yes",
+      "pIAAboveAnnualAllowanceIn2023": false,
+      "netIncomeAbove190KIn2023": false,
+      "flexibleAccessDcScheme": true,
+      "contribution4000ToDirectContributionScheme": true
     },
-    "lifetimeAllowanceSetup" : {
-      "benefitCrystallisationEventFlag" : true,
-      "changeInLifetimeAllowancePercentageInformedFlag" : true,
-      "multipleBenefitCrystallisationEventFlag" : false
+    "lifetimeAllowanceSetup": {
+      "benefitCrystallisationEventFlag": true,
+      "previousLTACharge": false,
+      "changeInLifetimeAllowancePercentageInformedFlag": true,
+      "increaseInLTACharge": true,
+      "newLTACharge": false,
+      "multipleBenefitCrystallisationEventFlag": false
     }
   },
   "annualAllowance" : {
